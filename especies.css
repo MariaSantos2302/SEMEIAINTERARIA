@@ -1,0 +1,289 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4edda;
+    color: #173e2d;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* INTRODUÇÃO */
+
+.introducao-especies {
+    padding: 75px 8%;
+    text-align: center;
+    background: linear-gradient(110deg, #ecdfc1, #f7f0df);
+}
+
+.categoria {
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #a74729;
+}
+
+.introducao-especies h2 {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.introducao-especies h2 span {
+    color: #a74729;
+}
+
+.introducao-especies > p:last-child {
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #526356;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao-especies {
+    padding: 60px 8%;
+}
+
+.apresentacao-especies > div {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apresentacao-especies h2 {
+    margin-bottom: 20px;
+    font-size: 31px;
+    line-height: 1.3;
+}
+
+.apresentacao-especies p:not(.categoria) {
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #526356;
+}
+
+/* LISTA DE ESPÉCIES */
+
+.lista-especies {
+    padding: 60px 8%;
+    background-color: #f8f2e2;
+}
+
+.titulo-secao {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.titulo-secao > p:last-child {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #526356;
+}
+
+.grade-especies {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.cartao-especie {
+    overflow: hidden;
+    background-color: #fffdf6;
+    border: 1px solid #e1d6bd;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cartao-especie:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(23, 62, 45, 0.09);
+}
+
+.cartao-especie img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.conteudo-especie {
+    padding: 24px;
+}
+
+.tipo-especie {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    color: #a74729;
+}
+
+.conteudo-especie h3 {
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.nome-cientifico {
+    margin-bottom: 18px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    color: #6b796b;
+}
+
+.conteudo-especie p:not(.tipo-especie):not(.nome-cientifico) {
+    margin-bottom: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #526356;
+}
+
+.conteudo-especie h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #173e2d;
+}
+
+/* IMPORTÂNCIA DAS ESPÉCIES */
+
+.importancia-especies {
+    padding: 65px 8%;
+    text-align: center;
+    background-color: #e9e1c9;
+}
+
+.importancia-especies h2 {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.importancia-especies > p:last-child {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #526356;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    padding: 30px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #e5e0c7;
+    border-top: 1px solid #d8cbb0;
+}
+
+.rodape .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape .logo h1 {
+    font-size: 22px;
+}
+
+.rodape p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #526356;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1100px) {
+    .grade-especies {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .introducao-especies {
+        padding: 50px 6%;
+    }
+
+    .introducao-especies h2 {
+        font-size: 30px;
+    }
+
+    .introducao-especies > p:last-child {
+        font-size: 14px;
+    }
+
+    .apresentacao-especies {
+        padding: 40px 6%;
+    }
+
+    .apresentacao-especies h2 {
+        font-size: 26px;
+    }
+
+    .lista-especies {
+        padding: 45px 6%;
+    }
+
+    .titulo-secao h2 {
+        font-size: 27px;
+    }
+
+    .grade-especies {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cartao-especie img {
+        height: 230px;
+    }
+
+    .importancia-especies {
+        padding: 45px 6%;
+    }
+
+    .importancia-especies h2 {
+        font-size: 27px;
+    }
+
+    .rodape {
+        padding: 25px 6%;
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,487 @@
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4edda;
+    color: #173e2d;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+.cabecalho {
+    min-height: 95px;
+    padding: 15px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #f8f2e2;
+    border-bottom: 1px solid #d8cbb0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.simbolo {
+    font-size: 38px;
+    color: #a74729;
+}
+
+.logo h1 {
+    font-size: 23px;
+    color: #173e2d;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #173e2d;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    color: #a74729;
+    border-bottom-color: #a74729;
+}
+
+/* ==============================
+   INTRODUÇÃO
+============================== */
+
+.introducao {
+    padding: 75px 8% 55px;
+    text-align: center;
+    background: linear-gradient(110deg, #ecdfc1, #f7f0df);
+}
+
+.categoria {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #a74729;
+    margin-bottom: 15px;
+}
+
+.introducao h2 {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #173e2d;
+}
+
+.introducao h2 span {
+    color: #a74729;
+}
+
+.descricao {
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #526356;
+}
+
+/* ==============================
+   APRESENTAÇÃO DOS SABERES
+============================== */
+
+.apresentacao {
+    padding: 65px 8%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.texto-apresentacao h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 1.3;
+    color: #173e2d;
+}
+
+.texto-apresentacao p {
+    margin-bottom: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #526356;
+}
+
+.imagem-apresentacao {
+    width: 100%;
+}
+
+.imagem-apresentacao img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ==============================
+   CARTÕES DE SABERES
+============================== */
+
+.saberes {
+    padding: 65px 8%;
+    background-color: #f8f2e2;
+}
+
+.titulo-secao {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    margin-bottom: 12px;
+    font-size: 32px;
+    color: #173e2d;
+}
+
+.titulo-secao p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #526356;
+}
+
+.grade-saberes {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.cartao-saber {
+    padding: 25px 22px;
+    background-color: #fffdf6;
+    border: 1px solid #e1d6bd;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cartao-saber:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(23, 62, 45, 0.08);
+}
+
+.cartao-saber h3 {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #173e2d;
+}
+
+.cartao-saber p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #526356;
+}
+
+/* ==============================
+   MULHERES E SABERES ANCESTRAIS
+============================== */
+
+.mulheres {
+    width: 100%;
+    padding: 65px 8%;
+    background-color: #e9e1c9;
+    box-sizing: border-box;
+}
+
+.texto-mulheres {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.texto-mulheres .categoria {
+    margin-bottom: 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #a74729;
+}
+
+.texto-mulheres h2 {
+    margin: 0 0 25px;
+    font-size: 32px;
+    line-height: 1.3;
+    color: #173e2d;
+}
+
+.texto-mulheres h3 {
+    margin: 30px 0 12px;
+    font-size: 21px;
+    line-height: 1.4;
+    color: #a74729;
+}
+
+.texto-mulheres p {
+    margin: 0 0 18px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #354b3d;
+}
+
+.texto-mulheres .frase-mulheres {
+    margin-top: 30px;
+    padding: 20px 25px;
+    border-left: 4px solid #a74729;
+    background-color: #f8f2e2;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #173e2d;
+}
+
+/* ==============================
+   SEÇÃO DE VALORIZAÇÃO
+============================== */
+
+.valorizacao {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.valorizacao h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #173e2d;
+}
+
+.valorizacao p {
+    max-width: 750px;
+    margin: 0 auto 18px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #526356;
+}
+
+/* ==============================
+   MENSAGEM FINAL
+============================== */
+
+.mensagem-final {
+    padding: 60px 8%;
+    text-align: center;
+    background: linear-gradient(110deg, #ecdfc1, #f7f0df);
+}
+
+.mensagem-final .categoria {
+    margin-bottom: 15px;
+}
+
+.mensagem-final h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 1.3;
+    color: #173e2d;
+}
+
+.mensagem-final p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #526356;
+}
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+.rodape {
+    padding: 30px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #e5e0c7;
+    border-top: 1px solid #d8cbb0;
+}
+
+.rodape .logo h1 {
+    font-size: 22px;
+}
+
+.rodape p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #526356;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 1100px) {
+    .cabecalho {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        gap: 16px;
+    }
+
+    .apresentacao {
+        gap: 30px;
+    }
+
+    .grade-saberes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .cabecalho {
+        padding: 18px 6%;
+        justify-content: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 10px 18px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .introducao {
+        padding: 50px 6% 40px;
+    }
+
+    .introducao h2 {
+        font-size: 30px;
+    }
+
+    .descricao {
+        font-size: 14px;
+    }
+
+    .apresentacao {
+        padding: 40px 6%;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .texto-apresentacao h2 {
+        font-size: 26px;
+    }
+
+    .imagem-apresentacao img {
+        height: 250px;
+    }
+
+    .saberes {
+        padding: 45px 6%;
+    }
+
+    .titulo-secao h2 {
+        font-size: 27px;
+    }
+
+    .grade-saberes {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cartao-saber {
+        padding: 22px;
+    }
+
+    .mulheres {
+        padding: 40px 6%;
+    }
+
+    .texto-mulheres h2 {
+        font-size: 26px;
+    }
+
+    .texto-mulheres h3 {
+        font-size: 19px;
+    }
+
+    .texto-mulheres p {
+        font-size: 14px;
+    }
+
+    .texto-mulheres .frase-mulheres {
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    .valorizacao {
+        padding: 45px 6%;
+    }
+
+    .valorizacao h2 {
+        font-size: 27px;
+    }
+
+    .mensagem-final {
+        padding: 45px 6%;
+    }
+
+    .mensagem-final h2 {
+        font-size: 27px;
+    }
+
+    .rodape {
+        padding: 25px 6%;
+        flex-direction: column;
+        text-align: center;
+    }
+}

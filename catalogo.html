@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Semeia+</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+    
+            <h1>Semeia+</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html" class="ativo">Catálogo</a>
+            <a href="especies.html">Espécies</a>
+            <a href="saberes.html">Saberes Ancestrais</a>
+            <a href="territorios.html">Territórios</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="documentacao.html">Documentação</a>
+        </nav>
+    </header>
+
+
+    <main class="catalogo">
+        <div class="titulo-secao">
+            <h2>Espécies em destaque</h2>
+            <p id="contador">7 espécies</p>
+        </div>
+
+        <div class="cartoes">
+
+            <article class="cartao terracota"
+                data-nome="aroeira-da-praia schinus terebinthifolia"
+                data-bioma="restinga mata atlântica"
+                data-tipo="árvore">
+
+                <img src="aroeira.png"
+                    alt="Aroeira-da-praia">
+
+                <div class="conteudo">
+                    <h3>Aroeira-da-praia</h3>
+                    <p class="cientifico">Schinus terebinthifolia Raddi</p>
+
+                    <p class="informacao">Costa brasileira e restingas</p>
+                    <p class="informacao">Árvore de pequeno a médio porte</p>
+                    <p class="informacao">Atrai aves e polinizadores</p>
+
+                    <p class="descricao">
+                        Possui frutos avermelhados conhecidos como
+                        pimenta-rosa. É importante para a alimentação
+                        da fauna e para a restauração de áreas degradadas.
+                    </p>
+
+                    <button onclick="mostrarDetalhes('aroeira')">
+                        Conhecer espécie 
+                    </button>
+
+                    <div id="aroeira" class="detalhes">
+                        <p><strong>Descrição e características:</strong>
+                        Árvore de copa arredondada, folhas compostas
+                        e pequenas flores claras.</p>
+
+                        <p><strong>Locais de ocorrência:</strong>
+                        Costa brasileira e diferentes formações vegetais,
+                        principalmente em solos arenosos.</p>
+
+                        <p><strong>Aspectos ecológicos:</strong>
+                        Seus frutos alimentam aves e suas flores atraem
+                        abelhas e outros polinizadores.</p>
+
+                        <p><strong>Por que preservar?</strong>
+                        Ajuda na recuperação da vegetação nativa e na
+                        criação de condições favoráveis para a fauna.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao amarelo"
+                data-nome="cajui anacardium humile anacardium microcarpum"
+                data-bioma="cerrado caatinga restinga"
+                data-tipo="arbusto">
+
+                <img src="cajui.png" alt="Cajuí">
+
+                <div class="conteudo">
+                    <h3>Cajuí</h3>
+                    <p class="cientifico">Anacardium spp.</p>
+
+                    <p class="informacao">Cerrado, Caatinga e litoral</p>
+                    <p class="informacao">Arbusto ou árvore pequena</p>
+                    <p class="informacao">Frutos de valor alimentar</p>
+
+                    <p class="descricao">
+                        Parente do cajueiro comum, apresenta frutos
+                        menores e possui importância alimentar e cultural
+                        para as populações locais.
+                    </p>
+
+                    <button onclick="mostrarDetalhes('cajui')">
+                        Conhecer espécie →
+                    </button>
+
+                    <div id="cajui" class="detalhes">
+                        <p><strong>Descrição e características:</strong>
+                        Pode apresentar porte arbustivo ou formar árvores
+                        pequenas. Seus frutos e pseudofrutos são geralmente
+                        menores que os do caju cultivado.</p>
+
+                        <p><strong>Locais de ocorrência:</strong>
+                        Cerrado, Caatinga e formações litorâneas do Nordeste
+                        e Centro-Oeste.</p>
+
+                        <p><strong>Aspectos ecológicos:</strong>
+                        Adapta-se a solos arenosos e secos. Seus frutos
+                        alimentam animais da fauna nativa.</p>
+
+                        <p><strong>Por que preservar?</strong>
+                        Protege a biodiversidade e valoriza os conhecimentos
+                        tradicionais relacionados às plantas nativas.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao verde"
+                data-nome="pitangueira eugenia uniflora"
+                data-bioma="mata atlântica"
+                data-tipo="árvore">
+
+                <img src="pitangueira.png" alt="Pitangueira">
+
+                <div class="conteudo">
+                    <h3>Pitangueira</h3>
+                    <p class="cientifico">Eugenia uniflora L.</p>
+
+                    <p class="informacao">Mata Atlântica</p>
+                    <p class="informacao">Árvore de 6 a 12 metros</p>
+                    <p class="informacao">Frutos para a fauna</p>
+
+                    <p class="descricao">
+                        Produz frutos avermelhados e nutritivos, importantes
+                        para aves e pequenos mamíferos.
+                    </p>
+
+                    <button onclick="mostrarDetalhes('pitangueira')">
+                        Conhecer espécie →
+                    </button>
+
+                    <div id="pitangueira" class="detalhes">
+                        <p><strong>Descrição e características:</strong>
+                        Possui tronco tortuoso e liso, folhas brilhantes,
+                        flores brancas e frutos sulcados.</p>
+
+                        <p><strong>Locais de ocorrência:</strong>
+                        Mata Atlântica e outras formações vegetais,
+                        da Bahia ao Rio Grande do Sul.</p>
+
+                        <p><strong>Aspectos ecológicos:</strong>
+                        É frequente em solos úmidos. Floresce entre agosto
+                        e novembro e frutifica de outubro a janeiro.</p>
+
+                        <p><strong>Por que preservar?</strong>
+                        Contribui para a conservação do solo, a arborização
+                        urbana e a recuperação ambiental.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao azul"
+                data-nome="ingazeiro inga vera inga edulis"
+                data-bioma="mata atlântica"
+                data-tipo="árvore">
+
+                <img src="ingazeiro.png" alt="Ingazeiro">
+
+                <div class="conteudo">
+                    <h3>Ingazeiro</h3>
+                    <p class="cientifico">Inga spp.</p>
+
+                    <p class="informacao">Matas ciliares e Mata Atlântica</p>
+                    <p class="informacao">Árvore de 5 a 15 metros</p>
+                    <p class="informacao">Frutos com polpa adocicada</p>
+
+                    <p class="descricao">
+                        Seus frutos alimentam a fauna e suas raízes
+                        contribuem para proteger as margens dos rios.
+                    </p>
+
+                    <button onclick="mostrarDetalhes('ingazeiro')">
+                        Conhecer espécie →
+                    </button>
+
+                    <div id="ingazeiro" class="detalhes">
+                        <p><strong>Descrição e características:</strong>
+                        Possui copa ampla, folhas compostas e vagens
+                        com sementes envoltas em polpa branca e doce.</p>
+
+                        <p><strong>Locais de ocorrência:</strong>
+                        Diversas formações vegetais brasileiras,
+                        principalmente florestas e matas ciliares.</p>
+
+                        <p><strong>Aspectos ecológicos:</strong>
+                        É uma espécie pioneira, de crescimento rápido,
+                        adaptada a solos úmidos e margens de rios.</p>
+
+                        <p><strong>Por que preservar?</strong>
+                        Ajuda a recuperar matas ciliares e protege
+                        as margens dos rios contra a erosão.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao verde"
+                data-nome="inga-da-praia inga maritima"
+                data-bioma="restinga"
+                data-tipo="arbusto">
+
+                <img src="ingadapraia.png"
+                    alt="Ingá-da-praia">
+
+                <div class="conteudo">
+                    <h3>Ingá-da-praia</h3>
+                    <p class="cientifico">Inga maritima Benth.</p>
+
+                    <p class="informacao">Restingas do litoral</p>
+                    <p class="informacao">Arbusto ou árvore pequena</p>
+                    <p class="informacao">Importante para a fauna costeira</p>
+
+                    <p class="descricao">
+                        Espécie adaptada às condições costeiras,
+                        importante para a vegetação de restinga.
+                    </p>
+
+                    <button onclick="mostrarDetalhes('inga-praia')">
+                        Conhecer espécie →
+                    </button>
+
+                    <div id="inga-praia" class="detalhes">
+                        <p><strong>Descrição e características:</strong>
+                        Planta de 1 a 6 metros, com folhas compostas
+                        e vagens achatadas com polpa branca.</p>
+
+                        <p><strong>Locais de ocorrência:</strong>
+                        Endêmica do Brasil, registrada em restingas
+                        do Sudeste, especialmente no Rio de Janeiro.</p>
+
+                        <p><strong>Aspectos ecológicos:</strong>
+                        Tolera solos salinos e áreas brejosas próximas
+                        ao mar. Floresce de junho a novembro.</p>
+
+                        <p><strong>Por que preservar?</strong>
+                        Sua conservação contribui para a restauração
+                        de restingas afetadas pela urbanização.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao terracota"
+                data-nome="pau-pombo tapirira guianensis"
+                data-bioma="mata atlântica cerrado"
+                data-tipo="árvore">
+
+                <img src="paupombo.png" alt="Pau-pombo">
+
+                <div class="conteudo">
+                    <h3>Pau-pombo</h3>
+                    <p class="cientifico">Tapirira guianensis Aubl.</p>
+
+                    <p class="informacao">Mata Atlântica e Cerrado</p>
+                    <p class="informacao">Árvore de 8 a 14 metros</p>
+                    <p class="informacao">Frutos apreciados por aves</p>
+
+                    <p class="descricao">
+                        Seus frutos são importantes para aves silvestres
+                        e a espécie contribui para a regeneração florestal.
+                    </p>
+
+                    <button onclick="mostrarDetalhes('pau-pombo')">
+                        Conhecer espécie →
+                    </button>
+
+                    <div id="pau-pombo" class="detalhes">
+                        <p><strong>Descrição e características:</strong>
+                        Árvore de copa frondosa, folhas compostas
+                        e frutos pequenos e carnosos.</p>
+
+                        <p><strong>Locais de ocorrência:</strong>
+                        Ocorre em quase todo o Brasil, principalmente
+                        em solos úmidos e várzeas.</p>
+
+                        <p><strong>Aspectos ecológicos:</strong>
+                        Seus frutos alimentam aves silvestres,
+                        incluindo pombos nativos.</p>
+
+                        <p><strong>Por que preservar?</strong>
+                        Ajuda a manter populações de aves e contribui
+                        para a regeneração florestal.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao amarelo"
+                data-nome="murici-da-praia byrsonima sericea byrsonima crassifolia"
+                data-bioma="restinga"
+                data-tipo="arbusto">
+
+                <img src="murici.png"
+                    alt="Murici-da-praia">
+
+                <div class="conteudo">
+                    <h3>Murici-da-praia</h3>
+                    <p class="cientifico">Byrsonima sericea / B. crassifolia</p>
+
+                    <p class="informacao">Restingas, dunas e litoral</p>
+                    <p class="informacao">Arbusto de 1 a 3 metros</p>
+                    <p class="informacao">Flores amarelas e frutos aromáticos</p>
+
+                    <p class="descricao">
+                        Resiste a solos arenosos e ajuda na fixação de
+                        dunas e na redução da erosão costeira.
+                    </p>
+
+                    <button onclick="mostrarDetalhes('murici')">
+                        Conhecer espécie →
+                    </button>
+
+                    <div id="murici" class="detalhes">
+                        <p><strong>Descrição e características:</strong>
+                        Arbusto de copa aberta, folhas coriáceas,
+                        flores amarelas e frutos aromáticos.</p>
+
+                        <p><strong>Locais de ocorrência:</strong>
+                        Faixa litorânea brasileira, em restingas,
+                        dunas e matas de tabuleiro.</p>
+
+                        <p><strong>Aspectos ecológicos:</strong>
+                        Resistente ao sol, à salinidade e aos solos
+                        arenosos. Floresce de setembro a janeiro.</p>
+
+                        <p><strong>Por que preservar?</strong>
+                        Contribui para fixar dunas, conter a erosão
+                        e alimentar a fauna das restingas.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Plantas que alimentam, curam e restauram.</p>
+        <p>Tecnologias do Bem Viver</p>
+    </footer>
+
+    <script>
+        function mostrarDetalhes(id) {
+            const detalhes = document.getElementById(id);
+            detalhes.classList.toggle("aberto");
+        }
+
+        const busca = document.getElementById("busca");
+        const filtroBioma = document.getElementById("filtroBioma");
+        const filtroTipo = document.getElementById("filtroTipo");
+        const cartoes = document.querySelectorAll(".cartao");
+        const contador = document.getElementById("contador");
+
+        function filtrarEspecies() {
+            let quantidade = 0;
+            const texto = busca.value.toLowerCase();
+            const bioma = filtroBioma.value;
+            const tipo = filtroTipo.value;
+
+            cartoes.forEach(function(cartao) {
+                const nome = cartao.dataset.nome;
+                const biomas = cartao.dataset.bioma;
+                const planta = cartao.dataset.tipo;
+
+                const combinaNome = nome.includes(texto);
+                const combinaBioma = bioma === "" || biomas.includes(bioma);
+                const combinaTipo = tipo === "" || planta === tipo;
+
+                if (combinaNome && combinaBioma && combinaTipo) {
+                    cartao.style.display = "flex";
+                    quantidade++;
+                } else {
+                    cartao.style.display = "none";
+                }
+            });
+
+            contador.textContent = quantidade +
+                (quantidade === 1 ? " espécie" : " espécies");
+        }
+
+        busca.addEventListener("input", filtrarEspecies);
+        filtroBioma.addEventListener("change", filtrarEspecies);
+        filtroTipo.addEventListener("change", filtrarEspecies);
+    </script>
+
+</body>
+</html>
